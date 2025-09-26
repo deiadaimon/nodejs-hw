@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import pino from "pino-http";
-import "dotenv/confif";
+import "dotenv/config";
 
 const app = express();
 // значення з .env або дефолтний порт 3030
