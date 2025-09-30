@@ -16,11 +16,6 @@ app.use(express.json({
 }));
 app.use(cors());
 
-// error-testing middleware
-app.get("/test-error", () => {
-  throw new Error("Simulated server error");
-});
-
 app.use(notesRoutes);
 app.use(notFoundHandler);
 app.use(errorHandler);
